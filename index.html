@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="images/logo2.png" class="logo" alt="My logo">
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Featured Work<span class="sr-only">(current)</span></a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <header>
+      <div class="container">
+        <div class="intro-text">
+          <div id="greetings-text">Welcome to my portfolio!</div>
+          <div id="name-text">Vicente Albiter</div>
+          <div id="occupation-text">Front-End Ninja</div>
+        </div>
+      </div>
+    </header>
+
+    <section id="featured-work">
+      <div class="container">
+        <div class="row col-sm-12">
+          <div class="text-center">
+            <h2 class="section-header text-uppercase">Featured Work</h2>
+          </div>
+        </div> <!--end of section heading-->
+
+        <div class="row">
+          <div class="col-sm-6 col-lg-4 portfolio-item">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="images/miles-600x600_large_2x.jpg 2x, images/miles-400x400_large_1x.jpg"> <!--This breakpoint correspond to Bootstrap's breakpoint for large devices -->
+              <img src="images/miles.jpg" class="img-responsive portfolio-image img-circle" alt="Miles Davis">
+            </picture>
+            <div class="porfolio-item-description">
+              <h4>Miles Davis</h4>
+              <p><a href="http://github.com">Link to project</a></p>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 portfolio-item">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="images/django-600x600_large_2x.jpg 2x, images/django-400x400_large_1x.jpg"> <!--This breakpoint correspond to Bootstrap's breakpoint for large devices -->
+              <img src="images/django.jpg" class="img-responsive portfolio-image img-circle" alt="Django Reinhardt">
+            </picture>
+            <div class="porfolio-item-description">
+              <h4>Django Reinhardt</h4>
+              <p><a href="http://github.com">Link to project</a></p>
+            </div>
+          </div>
+
+          <div class="clearfix visible-sm-block"></div>
+
+          <div class="col-sm-6 col-lg-4 portfolio-item">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="images/john-600x600_large_2x.jpg 2x, images/john-400x400_large_1x.jpg"> <!--This breakpoint correspond to Bootstrap's breakpoint for large devices -->
+              <img src="images/john.jpg" class="img-responsive portfolio-image img-circle" alt="John Coltrane">
+            </picture>
+            <div class="porfolio-item-description">
+              <h4>John Coltrane</h4>
+              <p><a href="http://github.com">Link to project</a></p>
+            </div>
+          </div>
+
+          <div class="clearfix visible-lg-block"></div>
+
+          <div class="col-sm-6 col-lg-4 portfolio-item">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="images/wes-600x600_large_2x.jpg 2x, images/wes-400x400_large_1x.jpg"> <!--This breakpoint correspond to Bootstrap's breakpoint for large devices -->
+              <img src="images/wes.jpg" class="img-responsive portfolio-image img-circle" alt="Wes Montgomery">
+            </picture>
+            <div class="porfolio-item-description">
+              <h4>Wes Montgomery</h4>
+              <p><a href="http://github.com">Link to project</a></p>
+            </div>
+          </div>
+
+          <div class="clearfix visible-sm-block"></div>
+
+          <div class="col-sm-6 col-lg-4 portfolio-item">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="images/art-600x600_large_2x.jpg 2x, images/art-400x400_large_1x.jpg"> <!--This breakpoint correspond to Bootstrap's breakpoint for large devices -->
+              <img src="images/art.jpg" class="img-responsive portfolio-image img-circle" alt="Art Blakey">
+            </picture>
+            <div class="porfolio-item-description">
+              <h4>Art Blakey</h4>
+              <p><a href="http://github.com">Link to project</a></p>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 portfolio-item">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="images/pat-600x600_large_2x.jpg 2x, images/pat-400x400_large_1x.jpg"> <!--This breakpoint correspond to Bootstrap's breakpoint for large devices -->
+              <img src="images/pat.jpg" class="img-responsive portfolio-image img-circle" alt="Pat Metheny">
+            </picture>
+            <div class="porfolio-item-description">
+              <h4>Pat Metheny</h4>
+              <p><a href="http://github.com">Link to project</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="text-left" id="about-me">
+              <h2 class="section-header text-uppercase">About me</h2>
+              <p>Mexico City-based control systems engineer pursuing a career in the tech industry. </p>
+              <p>Classical guitar student, sports enthusiast, and tech lover. </p>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="text-left" id="contact-me">
+              <h2 class="section-header text-uppercase">Contact me</h2>
+              <form>
+                <div class="form-group">
+                  <label for="inputEmail">Email address</label>
+                  <input type="email" class="form-control" id="inputEmail">
+                </div>
+                <div class="form-group">
+                  <label for="inputMessage">Your Message</label>
+                  <input type="text" class="form-control" id="inputMessage">
+                </div>
+                <button type="submit" class="btn btn-default text-uppercase">Send Message</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2 class="section-header-small">Follow me</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <ul id="social-icons">
+              <li class="zocial-twitter"><a href="#"> Twitter</a></li>
+              <li class="zocial-linkedin"><a href="#"> LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
